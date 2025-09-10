@@ -26,7 +26,7 @@ plugins: [require("nira")],
 
 ```html
 <!-- All components in one -->
-<script src="https://cdn.jsdelivr.net/npm/nira@latest/dist/nira.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/thaboyaluya/nira-ui@master/nira.js"></script>
 ```
 
 
