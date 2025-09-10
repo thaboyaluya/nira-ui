@@ -1,4 +1,4 @@
-module.exports=Form=(styles)=>(
+export default Form=>(
     {
       ".form-group": {
     "@apply flex w-full flex-col gap-3": {}

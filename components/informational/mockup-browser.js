@@ -1,4 +1,4 @@
-module.exports = MockupBrowser = (styles) => (
+export default MockupBrowser  => (
     {
   ' .mockup-browser': {
     '@apply relative rounded-2xl': {},

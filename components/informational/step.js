@@ -1,4 +1,4 @@
-module.exports=Step=(style)=>({
+export default Step=>({
 ".steps": {
     "@apply flex w-full gap-6": {}
   },

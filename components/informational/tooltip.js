@@ -1,4 +1,4 @@
-module.exports = Tooltip = (styles) => ({
+export default Tooltip  => ({
   '.tooltip': {
     '@apply relative': {},
   "--tooltip-bg": "#000000",

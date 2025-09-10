@@ -1,4 +1,4 @@
-module.exports = Accordion = (styles) => ({
+export default Accordion  => ({
   '.accordion-group': {
     '@apply relative mx-auto text-base bg-base-100 transition duration-[.2s] ease-in': {}
   },

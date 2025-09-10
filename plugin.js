@@ -1,43 +1,43 @@
-const plugin = require("tailwindcss/plugin");
-const defaultTheme = require("tailwindcss/defaultTheme");
-const Button = require("./components/inputs/button.js");
-const ButtonGroup = require("./components/inputs/button-grouped.js");
-const Checkbox = require("./components/inputs/checkbox.js");
-const Form = require("./components/inputs/form.js");
-const InputFile = require("./components/inputs/input-file.js");
-const Input = require("./components/inputs/input.js");
-const InputRange = require("./components/inputs/range.js");
-const Radio = require("./components/inputs/radio.js");
-const Select = require("./components/inputs/select.js");
-const Switch = require("./components/inputs/swtich.js");
-const Textarea = require("./components/inputs/textarea.js");
-const Scrollbar = require("./components/utilities/utilities.js");
-const Accordion = require("./components/informational/accordion.js");
-const Alert = require("./components/informational/alert.js");
-const Badge = require("./components/informational/badge.js");
-const Avatar = require("./components/informational/avatar.js");
-const Card = require("./components/informational/card.js");
-const Spinner = require("./components/informational/spinner.js");
-const Tooltip = require("./components/informational/tooltip.js");
-const KBD = require("./components/informational/kbd.js");
-const Table = require("./components/informational/table.js");
-const Breadcrumb = require("./components/navigations/breadcrumb.js");
-const Dot = require("./components/informational/dot.js");
-const Divider = require("./components/informational/divider.js");
-const Link = require("./components/navigations/link.js");
-const Skeleton = require("./components/informational/skeleton.js");
-const MockupBrowser = require("./components/informational/mockup-browser.js");
-const MockupCode = require("./components/informational/mockup-code.js");
-const Step = require("./components/informational/step.js");
-const Tab = require("./components/navigations/tab.js");
-const Sidebar = require("./components/navigations/sidebar.js");
-const Dropdown = require("./components/navigations/dropdown.js");
-const Navbar = require("./components/navigations/navbar.js");
-const Footer = require("./components/navigations/footer.js");
-const Modal = require("./components/informational/modal.js");
-const Drawer = require("./components/navigations/drawer.js");
-const Progress = require("./components/informational/progress.js");
-const Pagination = require("./components/informational/pagination.js");
+import { withOptions } from "tailwindcss/plugin";
+import { fontFamily as _fontFamily } from "tailwindcss/defaultTheme";
+import Button from "./components/inputs/button.js";
+import ButtonGroup from "./components/inputs/button-grouped.js";
+import Checkbox from "./components/inputs/checkbox.js";
+import Form from "./components/inputs/form.js";
+import InputFile from "./components/inputs/input-file.js";
+import Input from "./components/inputs/input.js";
+import InputRange from "./components/inputs/range.js";
+import Radio from "./components/inputs/radio.js";
+import Select from "./components/inputs/select.js";
+import Switch from "./components/inputs/swtich.js";
+import Textarea from "./components/inputs/textarea.js";
+import Scrollbar from "./components/utilities/utilities.js";
+import Accordion from "./components/informational/accordion.js";
+import Alert from "./components/informational/alert.js";
+import Badge from "./components/informational/badge.js";
+import Avatar from "./components/informational/avatar.js";
+import Card from "./components/informational/card.js";
+import Spinner from "./components/informational/spinner.js";
+import Tooltip from "./components/informational/tooltip.js";
+import KBD from "./components/informational/kbd.js";
+import Table from "./components/informational/table.js";
+import Breadcrumb from "./components/navigations/breadcrumb.js";
+import Dot from "./components/informational/dot.js";
+import Divider from "./components/informational/divider.js";
+import Link from "./components/navigations/link.js";
+import Skeleton from "./components/informational/skeleton.js";
+import MockupBrowser from "./components/informational/mockup-browser.js";
+import MockupCode from "./components/informational/mockup-code.js";
+import Step from "./components/informational/step.js";
+import Tab from "./components/navigations/tab.js";
+import Sidebar from "./components/navigations/sidebar.js";
+import Dropdown from "./components/navigations/dropdown.js";
+import Navbar from "./components/navigations/navbar.js";
+import Footer from "./components/navigations/footer.js";
+import Modal from "./components/informational/modal.js";
+import Drawer from "./components/navigations/drawer.js";
+import Progress from "./components/informational/progress.js";
+import Pagination from "./components/informational/pagination.js";
 
 
 const defaultThemes = {
@@ -315,7 +315,7 @@ gold: {
 
 
 
-module.exports = plugin.withOptions(
+export default withOptions(
 function (options = {}) {
 return function ({ addBase}) {
 const userThemes = options.themes || {};
@@ -419,7 +419,7 @@ addBase(InputRange());
       theme: {
         extend: {
             fontFamily: {
-          sans: ['"Geist", sans-serif', ...defaultTheme.fontFamily.sans],
+          sans: ['"Geist", sans-serif', ..._fontFamily.sans],
         },
           colors: {
             primary: "var(--color-primary)",

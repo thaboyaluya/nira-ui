@@ -1,4 +1,4 @@
-module.exports = Checkbox = (styles) => ({
+export default Checkbox  => ({
   '.checkbox': {
     '@apply bg-base-200  border border-base-300/47 appearance-none rounded-sm w-4 h-4  outline-base-300 outline-offset-2 focus:outline-2 focus:border-base-300/47  focus:outline-base-content-100 checked:bg-neutral-950 checked:border-neutral-950 disabled:opacity-50 disabled:pointer-events-none disabled:select-none': {}
   },

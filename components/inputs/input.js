@@ -1,4 +1,4 @@
-module.exports = Input = (styles) => (
+export default Input  => (
 {
   '.input': {
     '@apply px-4 py-2 text-base text-base-content placeholder:text-base-content/40 font-light  leading-[1.5em] border outline-base-content outline-offset-2 focus:outline-2  focus:outline-base-content border-base-300/47  rounded-lg bg-base-100 shadow-xs  active:border-base-content focus:border-base-content  disabled:opacity-50 disabled:pointer-events-none disabled:select-none': {}    

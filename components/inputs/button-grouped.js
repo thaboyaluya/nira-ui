@@ -1,4 +1,4 @@
-module.exports = ButtonGroup = (styles) => ({
+export default ButtonGroup  => ({
     ".button-grouped,.button-grouped-rounded":{
         "@apply inline-flex rounded-lg":{}
     },

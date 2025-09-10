@@ -1,4 +1,4 @@
-module.exports = Select = (styles) => (
+export default Select  => (
     {
   '.textarea': {
     '@apply px-4 py-2 shadow-xs text-base-content md:text-base sm:py-3 sm:px-4  border outline-base-content outline-offset-2 focus:outline-2 placeholder:text-base-content/40 active:outline-base-content border-base-300/47 shadow-2xs rounded-lg bg-base-100   sm:text-sm  disabled:opacity-50 disabled:pointer-events-none disabled:select-none active:border-base-content focus:border-base-content ': {}

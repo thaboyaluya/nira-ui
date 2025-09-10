@@ -1,4 +1,4 @@
-module.exports=Progress=()=>({
+export default  Progress=>({
  ".progress": {
     "@apply relative h-2 w-40 appearance-none overflow-hidden rounded-full bg-base-200": {}
   },

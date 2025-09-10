@@ -1,4 +1,4 @@
-module.exports = Table = (styles) => ({
+export default Table  => ({
   '.breadcrumbs': {
     '@apply px-[.75rem] text-base flex overflow-x-auto gap-[.5] text-base-content': {}
   },

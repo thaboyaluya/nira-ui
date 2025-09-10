@@ -1,4 +1,4 @@
-module.exports = Link = (styles) => ({
+export default Link  => ({
   '.link': {
     '@apply items-center text-base-content cursor-pointer inline-flex text-base duration-[.15s] transition-colors hover:text-base-content/70': {}
   },

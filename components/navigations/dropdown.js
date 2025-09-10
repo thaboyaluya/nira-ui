@@ -1,4 +1,4 @@
-module.exports = Dropdown = (styles) => ({
+export default Dropdown  => ({
   '.dropdown': {
     '@apply relative': {}
   },

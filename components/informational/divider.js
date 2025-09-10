@@ -1,4 +1,4 @@
-module.exports = Divider = (styles) => ({
+export default Divider  => ({
   '.divider:not(:empty)': {
     '@apply gap-[1rem]': {}
   },

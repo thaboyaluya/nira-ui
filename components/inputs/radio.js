@@ -1,4 +1,4 @@
-module.exports = Radio = (styles) => (
+export default Radio  => (
 {
   '.radio': {
     '@apply appearance-none cursor-pointer rounded-[50%] bg-base-200 border-base-300/47 border w-4 h-4 checked:bg-neutral-950 checked:border-neutral-950 outline-neutral-950 outline-offset-2 focus:outline-2 focus:border-neutral-950 focus:outline-base-content-100 disabled:opacity-50 disabled:pointer-events-none disabled:select-none': {}

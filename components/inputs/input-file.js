@@ -1,4 +1,4 @@
-module.exports = InputFile = (styles) => (
+export default InputFile  => (
     {
   '.input-file': {
     '@apply file:mr-4 text-base-content file:rounded-full file:border-0 file:bg-base-content-100/10 file:px-4 file:py-2 file:text-sm file:font-semibold file:text-base-content file:text-base  cursor-pointer hover:file:bg-base-content-300/10': {}

@@ -1,4 +1,4 @@
-module.exports=Button=()=>({
+export default Button=>({
     ".button" : {
     "@apply px-4 py-2 leading-[1.5em] inline-flex justify-center text-center items-center gap-2 text-base rounded-lg shadow-xs select-none border  bg-base-200/10  text-base-content border-base-300/47  hover:bg-base-200/40 duration-150 will-change-transform ease-in   focus:outline-hidden focus:bg-base-200/40  active:bg-base-200/40   cursor-pointer disabled:opacity-50 disabled:pointer-events-none disabled:select-none active:scale-[0.98] ":{}
   },

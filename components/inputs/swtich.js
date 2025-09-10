@@ -1,5 +1,5 @@
 
-module.exports = Switch = (styles) => (
+export default Switch  => (
     {
   '.switch': { '@apply relative inline-block  w-11 h-6 cursor-pointer': {} },
   '.switch-inner': { '@apply sr-only ': {} },

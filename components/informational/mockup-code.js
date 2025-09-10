@@ -1,4 +1,4 @@
-module.exports = MockupCode = (styles) => (
+export default MockupCode  => (
     {
   ' .mockup-code': {
     '@apply relative text-base text-white bg-[black] rounded-md py-[1.25rem]': {},

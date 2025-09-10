@@ -1,4 +1,4 @@
-module.exports=Sidebar=(styles)=>({
+export default Sidebar=>({
     '.sidebar': {
     '@apply top-0 z-[55] flex h-screen w-full max-w-[18rem] translate-x-0 flex-col justify-between bg-base-200': {}       
   },

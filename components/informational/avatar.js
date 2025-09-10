@@ -1,4 +1,4 @@
-module.exports = Avatar = (styles) => ({
+export default Avatar  => ({
   '.avatar-sm': {
     '@apply inline-block size-8 rounded-full': {}
   },

@@ -1,4 +1,4 @@
-module.exports = Table = (styles) => ({
+export default Table  => ({
   '.table': {
     '@apply w-full my-[1rem] mx-[0rem] bg-base-100 text-base-content border-collapse border-spacing-[0]': {}
   },

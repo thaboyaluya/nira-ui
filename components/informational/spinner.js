@@ -1,4 +1,4 @@
-module.exports = Spinner = (styles) => ({
+export default Spinner  => ({
   '.spinner': {
     '@apply animate-spin inline-block size-6 border-3 border-current border-t-transparent text-base-content-300 rounded-full ': {}
   },

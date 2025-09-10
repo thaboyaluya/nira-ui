@@ -1,4 +1,4 @@
-module.exports = Card = (styles) => ({
+export default Card  => ({
   '.card': {
     '@apply flex flex-col bg-base-100 border border-base-300/47 shadow-xs rounded-xl p-4 ': {}
   },

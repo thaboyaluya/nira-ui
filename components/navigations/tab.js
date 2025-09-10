@@ -1,4 +1,4 @@
-module.exports=Tab=(styles)=>({
+export default Tab=>({
     ".tabs": {
     "@apply flex w-fit flex-row flex-wrap items-center whitespace-nowrap": {}
   },

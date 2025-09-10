@@ -1,4 +1,4 @@
-module.exports = KBD = (styles) => ({
+export default KBD  => ({
   '.kbd': {
     '@apply py-[.375rem] px-[.625rem] leading-none justify-center whitespace-nowrap font-semibold text-sm h-fit inline-flex border-1  rounded-md items-center bg-base-200/40 border-base-300/47  shadow-[0px_1.5px_0px_rgba(0,0,0,0.1)]': {}
   },

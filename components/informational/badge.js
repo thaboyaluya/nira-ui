@@ -1,4 +1,4 @@
-module.exports = Badge = (styles) => ({
+export default Badge  => ({
   '.badge': {
     '@apply rounded-full px-2.5 py-0.5 text-white text-xs font-semibold bg-black': {}
   },

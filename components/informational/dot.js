@@ -1,4 +1,4 @@
-module.exports = Dot = (styles) => ({
+export default Dot  => ({
   '.dot': {
     '@apply bg-base-content-300 inline-flex select-none h-[.625rem] min-h-[10px] min-w-[10px] w-[.625rem] rounded-full': {}
   },

@@ -1,5 +1,5 @@
 
-module.exports = Select = (styles) => ({
+export default Select  => ({
     
    '.select':{
       "background-image": `url("data:image/svg+xml;charset=utf-8,%3Csvg class='select-icon' xmlns='http://www.w3.org/2000/svg' width='24' height='24' style='fill:%237e868c'%3E%3Cpath d='M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z'/%3E%3C/svg%3E")`,

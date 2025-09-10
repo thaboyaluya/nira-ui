@@ -1,4 +1,4 @@
-module.exports=Drawer=()=>({
+export default Drawer=>({
       '.drawer-toggle': {
     '@apply px-4 py-2 leading-[1.5em] inline-flex items-center gap-2 text-base rounded-lg select-none border  bg-base-200/40  text-base-content border-base-300/47 transition-colors hover:bg-base-300/40 duration-[.2s] ease-in   focus:outline-hidden focus:bg-base-300/40  active:bg-base-300/40   cursor-pointer disabled:opacity-50 disabled:pointer-events-none disabled:select-none': {}
   },

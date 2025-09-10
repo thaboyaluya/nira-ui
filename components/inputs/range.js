@@ -1,4 +1,4 @@
-module.exports = InputRange = (styles) => ({
+export default InputRange  => ({
   ".range": {
     '@apply w-full h-[0.5rem] bg-base-200 rounded-lg appearance-none cursor-pointer disabled:opacity-50 disabled:pointer-events-none disabled:select-none': {}
   },

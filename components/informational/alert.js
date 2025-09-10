@@ -1,4 +1,4 @@
-module.exports = Alert = (styles) => ({
+export default Alert  => ({
   '.alert': {
     '@apply relative w-full rounded-lg border border-base-300/47 bg-base-100 p-4 [&>svg]:absolute  [&>svg]:left-4 [&>svg]:top-4 [&>svg+div]:translate-y-[-3px] [&:has(svg)]:pl-11 text-base-content': {}
   },
