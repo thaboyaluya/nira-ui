@@ -1,4 +1,4 @@
-# Kutty
+# Nira
 
 Nira is a tailwind plugin for building web applications. It has a set of accessible and reusable components that are commonly used in web applications.
 
@@ -26,7 +26,7 @@ plugins: [require("nira")],
 
 ```html
 <!-- All components in one -->
-<script src="https://cdn.jsdelivr.net/npm/kutty@latest/dist/kutty.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/nira@latest/dist/nira.min.js"></script>
 ```
 
 
