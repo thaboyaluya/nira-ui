@@ -7,7 +7,7 @@ Nira is a tailwind plugin for building web applications. It has a set of accessi
 ## Installation
 
 ```sh
-npm install nira --save
+npm install nira-ui --save
 ```
 
 This plugin requires Tailwind CSS 4 or later. Tailwind CSS is not included in this package. Learn how to [install tailwind here](https://tailwindcss.com/docs/installation/).
