@@ -1,6 +1,5 @@
 const plugin = require("tailwindcss/plugin");
 const defaultTheme = require("tailwindcss/defaultTheme");
-const colors = require("tailwindcss/colors");
 const Button = require("./components/inputs/button.js");
 const ButtonGroup = require("./components/inputs/button-grouped");
 const Checkbox = require("./components/inputs/checkbox.js");
