@@ -1,4 +1,4 @@
-export default Navbar=>({
+export default Navbar=()=>({
   '.nav': {
     '@apply flex flex-wrap items-center pl-0 mb-0 select-none list-none ': {}
   },

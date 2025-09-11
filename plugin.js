@@ -1,5 +1,7 @@
-import { withOptions } from "tailwindcss/plugin";
+import plugin from "tailwindcss/plugin";
 import { fontFamily as _fontFamily } from "tailwindcss/defaultTheme";
+
+// component imports
 import Button from "./components/inputs/button.js";
 import ButtonGroup from "./components/inputs/button-grouped.js";
 import Checkbox from "./components/inputs/checkbox.js";
@@ -38,6 +40,7 @@ import Modal from "./components/informational/modal.js";
 import Drawer from "./components/navigations/drawer.js";
 import Progress from "./components/informational/progress.js";
 import Pagination from "./components/informational/pagination.js";
+
 
 
 const defaultThemes = {
@@ -314,113 +317,111 @@ gold: {
 
 
 
+// plugin factory
+function themePlugin(options = {}) {
+  const userThemes = options.themes || {};
+  const defaultTheme = options.defaultTheme || "light";
 
-export default withOptions(
-function (options = {}) {
-return function ({ addBase}) {
-const userThemes = options.themes || {};
-const defaultTheme = options.defaultTheme || "light";
-addBase({
-":root": defaultThemes[defaultTheme] || userThemes[defaultTheme] || {},
-})
+  return plugin(
+    function ({ addBase }) {
+      // set default theme
+      addBase({
+        ":root": defaultThemes[defaultTheme] || userThemes[defaultTheme] || {},
+      });
 
-for (const [name, vars] of Object.entries({
-...defaultThemes,
-...userThemes,
-})) {
-addBase({
-  [`[data-theme='${name}']`]: vars,
-})
-}  
-addBase({
-"@media (prefers-color-scheme: light)": {
-  ":root:not([data-theme])": defaultThemes.light,
-},
-"@media (prefers-color-scheme: dark)": {
-  ":root:not([data-theme])": defaultThemes.dark,
-},
-})
-addBase({
-"@keyframes tooltip-appear": {
-from: { opacity: "0" },
-to: { opacity: "1" },
-},
-})
-addBase({
-"@keyframes skeletonWave": {
-"0%": { "background-position": "200% 0" },
-to: {  "background-position": "-200% 0" },
-},
-})
-addBase({
-"@keyframes skeletonPulse": {
-"0% ": { opacity: "1" },
-"50%": { opacity: ".4" },
-to: { opacity: "1" },
-},
-})
-addBase({
-"@keyframes indeterminate-progress-bar": {
-  from: { left: "-60%" },
-  to: { left: "100%" },
-},
-});
+      // register all themes
+      for (const [name, vars] of Object.entries({
+        ...defaultThemes,
+        ...userThemes,
+      })) {
+        addBase({
+          [`[data-theme='${name}']`]: vars,
+        });
+      }
 
+      // system color scheme
+      addBase({
+        "@media (prefers-color-scheme: light)": {
+          ":root:not([data-theme])": defaultThemes.light,
+        },
+        "@media (prefers-color-scheme: dark)": {
+          ":root:not([data-theme])": defaultThemes.dark,
+        },
+      });
 
+      // keyframes
+      addBase({
+        "@keyframes tooltip-appear": {
+          from: { opacity: "0" },
+          to: { opacity: "1" },
+        },
+      });
+      addBase({
+        "@keyframes skeletonWave": {
+          "0%": { "background-position": "200% 0" },
+          to: { "background-position": "-200% 0" },
+        },
+      });
+      addBase({
+        "@keyframes skeletonPulse": {
+          "0%": { opacity: "1" },
+          "50%": { opacity: ".4" },
+          to: { opacity: "1" },
+        },
+      });
+      addBase({
+        "@keyframes indeterminate-progress-bar": {
+          from: { left: "-60%" },
+          to: { left: "100%" },
+        },
+      });
 
-addBase(Scrollbar());
-addBase(Accordion());
-addBase(Pagination());
-addBase(Alert());
-addBase(Badge());
-addBase(Avatar());
-addBase(Card());
-addBase(Modal());
-addBase(Progress());
-addBase(Spinner());
-addBase(Tooltip());
-addBase(Button());
-addBase(KBD());
-addBase(Drawer());
-addBase(Table());
-addBase(Footer());
-addBase(Tab());
-addBase(Dot());
-addBase(Skeleton());
-addBase(Dropdown());
-addBase(Step());
-addBase(ButtonGroup());
-addBase(Link());
-addBase(Sidebar());
-addBase(Navbar());
-addBase(MockupBrowser());
-addBase(MockupCode());
-addBase(Divider());
-addBase(Checkbox());
-addBase(Breadcrumb());
-addBase(Form());
-addBase(InputFile());
-addBase(Input());
-addBase(Radio());
-addBase(Select());
-addBase(Switch());
-addBase(Textarea());
-addBase(InputRange());
-
-
-  
-  };
-},
-  function () {
-    return {
-      themes: Object.keys(defaultThemes),
-      customThemes: {},
-      system: true,
+      // components
+      addBase(Scrollbar());
+      addBase(Accordion());
+      addBase(Pagination());
+      addBase(Alert());
+      addBase(Badge());
+      addBase(Avatar());
+      addBase(Card());
+      addBase(Modal());
+      addBase(Progress());
+      addBase(Spinner());
+      addBase(Tooltip());
+      addBase(Button());
+      addBase(KBD());
+      addBase(Drawer());
+      addBase(Table());
+      addBase(Footer());
+      addBase(Tab());
+      addBase(Dot());
+      addBase(Skeleton());
+      addBase(Dropdown());
+      addBase(Step());
+      addBase(ButtonGroup());
+      addBase(Link());
+      addBase(Sidebar());
+      addBase(Navbar());
+      addBase(MockupBrowser());
+      addBase(MockupCode());
+      addBase(Divider());
+      addBase(Checkbox());
+      addBase(Breadcrumb());
+      addBase(Form());
+      addBase(InputFile());
+      addBase(Input());
+      addBase(Radio());
+      addBase(Select());
+      addBase(Switch());
+      addBase(Textarea());
+      addBase(InputRange());
+    },
+    {
       theme: {
         extend: {
-            fontFamily: {
-          sans: ['"Geist", sans-serif', ..._fontFamily.sans],
-        },
+          fontFamily: {
+            sans: ['"Geist", sans-serif', ..._fontFamily.sans],
+          },
           colors: {
             primary: "var(--color-primary)",
             secondary: "var(--color-secondary)",
@@ -434,10 +435,16 @@ addBase(InputRange());
             "base-100": "var(--color-base-100)",
             "base-200": "var(--color-base-200)",
             "base-300": "var(--color-base-300)",
-            "base-400": "var(--color-base-400)"
+            "base-400": "var(--color-base-400)",
           },
         },
       },
-    };
-  }
-);
+    }
+  );
+}
+
+// export default plugin with your defaults
+export default themePlugin({
+  themes: defaultThemes,
+  defaultTheme: "light",
+});
