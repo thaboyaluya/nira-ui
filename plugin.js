@@ -324,9 +324,6 @@ const defaultTheme = options.defaultTheme || "light";
       addBase({
         ":root": defaultThemes[defaultTheme] || userThemes[defaultTheme] || {},
       });
-        addBase({
-        "@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap')":{}
-      });
 
       // register all themes
       for (const [name, vars] of Object.entries({
