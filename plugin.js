@@ -325,6 +325,15 @@ const defaultTheme = options.defaultTheme || "light";
         ":root": defaultThemes[defaultTheme] || userThemes[defaultTheme] || {},
       });
 
+           addBase({
+        "@font-face": {
+          fontFamily: "'Geist'",
+          fontStyle: "normal",
+          fontWeight: "100 900",
+          src: "url('./static/Geist-VariableFont_wght.tff') format('tff')",
+        },
+      });
+
       // register all themes
       for (const [name, vars] of Object.entries({
         ...defaultThemes,

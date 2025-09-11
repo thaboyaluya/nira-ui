@@ -582,9 +582,6 @@
   .h-\[1rem\] {
     height: 1rem;
   }
-  .h-\[calc\(80vh-56px\)\] {
-    height: calc(80vh - 56px);
-  }
   .h-auto {
     height: auto;
   }
@@ -614,9 +611,6 @@
   }
   .min-h-\[20rem\] {
     min-height: 20rem;
-  }
-  .min-h-\[40vh\] {
-    min-height: 40vh;
   }
   .w-0 {
     width: calc(var(--spacing) * 0);
@@ -3352,28 +3346,6 @@
       color: var(--color-secondary);
     }
   }
-  .lg\:min-h-full {
-    @media (width >= 64rem) {
-      min-height: 100%;
-    }
-  }
-  .lg\:flex-row {
-    @media (width >= 64rem) {
-      flex-direction: row;
-    }
-  }
-  .lg\:border-t-0 {
-    @media (width >= 64rem) {
-      border-top-style: var(--tw-border-style);
-      border-top-width: 0px;
-    }
-  }
-  .lg\:border-l {
-    @media (width >= 64rem) {
-      border-left-style: var(--tw-border-style);
-      border-left-width: 1px;
-    }
-  }
   .lg\:px-8 {
     @media (width >= 64rem) {
       padding-inline: calc(var(--spacing) * 8);
@@ -3441,6 +3413,14 @@
     --color-base-200: oklch(95% 0.00011 271.152);
     --color-base-300: oklch(83% 0.00011 271.152);
     --color-base-400: oklch(80% 0.00011 271.152);
+  }
+}
+@layer base {
+  @font-face {
+    font-family: 'Geist';
+    font-style: normal;
+    font-weight: 100 900;
+    src: url('./static/Geist-VariableFont_wght.tff') format('tff');
   }
 }
 @layer base {
