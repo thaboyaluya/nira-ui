@@ -324,15 +324,43 @@ const defaultTheme = options.defaultTheme || "light";
       addBase({
         ":root": defaultThemes[defaultTheme] || userThemes[defaultTheme] || {},
       });
+addBase({
+    "@font-face": {
+      fontFamily: "Geist",
+      fontStyle: "normal",
+      fontWeight: "100 900",
+      fontDisplay: "swap",
+      src: "url(https://fonts.gstatic.com/s/geist/v3/gyByhwUxId8gMEwcGFU.woff2) format('woff2')",
+      unicodeRange:
+        "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+    },
+  })
 
-           addBase({
-        "@font-face": {
-          fontFamily: "'Geist'",
-          fontStyle: "normal",
-          fontWeight: "100 900",
-          src: "url('./static/Geist-VariableFont_wght.tff') format('tff')",
-        },
-      });
+  // Inter (latin, normal)
+  addBase({
+    "@font-face": {
+      fontFamily: "Inter",
+      fontStyle: "normal",
+      fontWeight: "100 900",
+      fontDisplay: "swap",
+      src: "url(https://fonts.gstatic.com/s/inter/v20/UcCo3FwrK3iLTcviYwY.woff2) format('woff2')",
+      unicodeRange:
+        "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+    },
+  })
+
+  // Noto Sans (latin, normal)
+  addBase({
+    "@font-face": {
+      fontFamily: "Noto Sans",
+      fontStyle: "normal",
+      fontWeight: "100 900",
+      fontDisplay: "swap",
+      src: "url(https://fonts.gstatic.com/s/notosans/v41/o-0bIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjc5a7duw.woff2) format('woff2')",
+      unicodeRange:
+        "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+    },
+  })
 
       // register all themes
       for (const [name, vars] of Object.entries({
