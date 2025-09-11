@@ -317,7 +317,7 @@ gold: {
 // plugin factory
 function themePlugin(options = {}) {
   const userThemes = options.themes || {};
-
+const defaultTheme = options.defaultTheme || "light";
   return plugin(
     function ({ addBase }) {
       // set default theme

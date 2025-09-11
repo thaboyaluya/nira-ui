@@ -3426,7 +3426,23 @@
     }
   }
 }
-@layer base;
+@layer base {
+  :root {
+    --color-primary: #2fc6f8;
+    --color-secondary: #a835fa;
+    --color-success: #02ce57;
+    --color-danger: #f51d2f;
+    --color-warning: #fabf2b;
+    --color-base-content: oklch(21% 0.006 285.885);
+    --color-base-content-100: oklch(30% 0.006 285.885);
+    --color-base-content-200: oklch(39% 0.006 285.885);
+    --color-base-content-300: oklch(48% 0.006 285.885);
+    --color-base-100: oklch(100% 0.00011 271.152);
+    --color-base-200: oklch(95% 0.00011 271.152);
+    --color-base-300: oklch(83% 0.00011 271.152);
+    --color-base-400: oklch(80% 0.00011 271.152);
+  }
+}
 @layer base {
   [data-theme='light'] {
     --color-primary: #2fc6f8;
