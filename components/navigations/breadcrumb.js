@@ -1,4 +1,4 @@
-export default Table  => ({
+export default Breadcrumb => ({
   '.breadcrumbs': {
     '@apply px-[.75rem] text-base flex overflow-x-auto gap-[.5] text-base-content': {}
   },

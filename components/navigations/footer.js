@@ -1,4 +1,4 @@
-export default Footer=()=>({
+export default Footer=>({
   '.footer': {
     '@apply bg-base-100 text-base-content': {}
   },

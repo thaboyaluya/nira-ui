@@ -1,7 +1,5 @@
 import plugin from "tailwindcss/plugin";
-import { fontFamily as _fontFamily } from "tailwindcss/defaultTheme";
-
-// component imports
+import defaultTheme from "tailwindcss/defaultTheme";
 import Button from "./components/inputs/button.js";
 import ButtonGroup from "./components/inputs/button-grouped.js";
 import Checkbox from "./components/inputs/checkbox.js";
@@ -320,7 +318,6 @@ gold: {
 // plugin factory
 function themePlugin(options = {}) {
   const userThemes = options.themes || {};
-  const defaultTheme = options.defaultTheme || "light";
 
   return plugin(
     function ({ addBase }) {
@@ -420,7 +417,7 @@ function themePlugin(options = {}) {
       theme: {
         extend: {
           fontFamily: {
-            sans: ['"Geist", sans-serif', ..._fontFamily.sans],
+            sans: ['"Geist", sans-serif',...defaultTheme.fontFamily.sans],
           },
           colors: {
             primary: "var(--color-primary)",
@@ -444,7 +441,4 @@ function themePlugin(options = {}) {
 }
 
 // export default plugin with your defaults
-export default themePlugin({
-  themes: defaultThemes,
-  defaultTheme: "light",
-});
+export default themePlugin();

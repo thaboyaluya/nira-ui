@@ -1,4 +1,4 @@
-export default Pagination=()=>({
+export default Pagination=>({
      '.pagination': {
     '@apply flex pl-0 select-none list-none': {}
   },
