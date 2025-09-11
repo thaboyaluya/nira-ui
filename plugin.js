@@ -417,7 +417,7 @@ function themePlugin(options = {}) {
       theme: {
         extend: {
           fontFamily: {
-            sans: ['"Geist", sans-serif'],
+            sans: ['"Geist", sans-serif',"system-ui","Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol",],
           },
           colors: {
             primary: "var(--color-primary)",
