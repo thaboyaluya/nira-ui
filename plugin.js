@@ -417,7 +417,7 @@ function themePlugin(options = {}) {
       theme: {
         extend: {
           fontFamily: {
-            sans: ['"Geist", sans-serif',...defaultTheme.fontFamily.sans],
+            sans: ['"Geist", sans-serif'],
           },
           colors: {
             primary: "var(--color-primary)",
