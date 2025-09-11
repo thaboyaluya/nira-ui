@@ -1,6 +1,6 @@
 {
     "name": "nira-ui",
-    "version": "1.9.0",
+    "version": "1.10.0",
     "main": "plugin.js",
     "license": "MIT",
     "type": "module",

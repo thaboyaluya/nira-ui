@@ -1,5 +1,4 @@
 import plugin from "tailwindcss/plugin";
-import defaultTheme from "tailwindcss/defaultTheme";
 import Button from "./components/inputs/button.js";
 import ButtonGroup from "./components/inputs/button-grouped.js";
 import Checkbox from "./components/inputs/checkbox.js";
