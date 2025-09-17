@@ -3780,6 +3780,12 @@
   }
 }
 @layer base {
+  :root, [data-theme] {
+    background-color: var(--color-base-100);
+    color: var(--color-base-content);
+  }
+}
+@layer base {
   :root {
     scrollbar-color: currentColor var(--color-base-200) ;
     @supports (color: color-mix(in lab, red, red)) {

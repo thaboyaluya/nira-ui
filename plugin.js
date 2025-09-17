@@ -408,6 +408,12 @@ addBase({
           to: { left: "100%" },
         },
       });
+               addBase({
+        ":root, [data-theme]":{
+          "background-color":"var(--color-base-100)",
+          "color":"var(--color-base-content)",
+        },
+      });
 
       // components
       addBase(Scrollbar());
