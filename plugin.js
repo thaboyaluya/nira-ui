@@ -409,7 +409,13 @@ addBase({
         },
       });
                addBase({
-        ":root, [data-theme]":{
+        ":root":{
+          "background-color":"var(--color-base-100)",
+          "color":"var(--color-base-content)",
+        },
+      });
+                     addBase({
+        "[data-theme]":{
           "background-color":"var(--color-base-100)",
           "color":"var(--color-base-content)",
         },

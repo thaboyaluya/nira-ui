@@ -3780,7 +3780,13 @@
   }
 }
 @layer base {
-  :root, [data-theme] {
+  :root {
+    background-color: var(--color-base-100);
+    color: var(--color-base-content);
+  }
+}
+@layer base {
+  [data-theme] {
     background-color: var(--color-base-100);
     color: var(--color-base-content);
   }
