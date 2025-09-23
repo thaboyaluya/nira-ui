@@ -16,7 +16,7 @@
     "ui-library"
   ],
     "author": "Rume Aluya",
-    "homepage": "https://nira.com/",
+    "homepage": "https://niraui.onrender.com/",
     "description": "Cleanest, modern and beatifull Tailwind CSS library for HTML, React and Vue.",
     "dependencies": {
         "@tailwindcss/cli": "^4.1.12",
