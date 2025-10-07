@@ -90,26 +90,6 @@ const defaultThemes = {
     "--color-base-300": "oklch(29% 0.05 270)",
     "--color-base-400": "oklch(35% 0.05 270)"
   },
-
-neon: {//
-  "--color-primary": "#00ff88",
-  "--color-secondary": "#ff00ff",
-    "--color-success": "#00a63e",
-    "--color-danger": "#e7000b",
-    "--color-warning": "#f0b100",
-  //-9
-  "--color-base-content": "oklch(92% 0.02 250)",
-  "--color-base-content-100": "oklch(83% 0.02 250)",
-  "--color-base-content-200": "oklch(74% 0.02 250)",
-  "--color-base-content-300": "oklch(65% 0.02 250)",
-  //+6
-  "--color-base-100": "oklch(15% 0.22777 152.572)",
-  "--color-base-200": "oklch(21% 0.22777 152.572)",
-  "--color-base-300": "oklch(27% 0.22777 152.572)",
-  "--color-base-400": "oklch(33% 0.22777 152.572)"
-},
-
-
 steel: {//
   "--color-primary": "#64748b",
   "--color-secondary": "#475569",
@@ -147,27 +127,6 @@ storm: {//
   "--color-base-300": "oklch(26% 0.18094 265.652)",
   "--color-base-400": "oklch(32% 0.18094 265.652)"
 },
-
-
-  forest: {//
-    "--color-primary": "#166534",
-    "--color-secondary": "#22c55e",
-    "--color-success": "#00a63e",
-    "--color-danger": "#e7000b",
-    "--color-warning": "#f0b100",
-//-9
-    "--color-base-content": "oklch(90% 0.10831 151.351)",
-    "--color-base-content-100": "oklch(81% 0.10831 151.351)",
-    "--color-base-content-200": "oklch(72% 0.10831 151.351)",
-    "--color-base-content-300": "oklch(63% 0.10831 151.351)",
-//+6
-    "--color-base-100": "oklch(20% 0.10831 151.351)",
-    "--color-base-200": "oklch(26% 0.10831 151.351)",
-    "--color-base-300": "oklch(32% 0.10831 151.351)",
-    "--color-base-400": "oklch(38% 0.10831 151.351)"
-  },
-
-
 sunset: {//
     "--color-primary": "#f97316",
     "--color-secondary": "#ea580c",
