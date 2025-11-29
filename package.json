@@ -1,11 +1,11 @@
 {
     "name": "nira-ui",
-    "version": "1.26.0",
+    "version": "1.27.0",
     "main": "plugin.js",
     "license": "MIT",
     "type": "module",
   "keywords": [
-    "NiraUI",
+    "nira-ui",
     "ui",
     "tailwindcss",
     "components",

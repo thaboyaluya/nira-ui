@@ -373,7 +373,7 @@ addBase({
           "color":"var(--color-base-content)",
         },
       });
-      addBase({
+                     addBase({
         "[data-theme]":{
           "background-color":"var(--color-base-100)",
           "color":"var(--color-base-content)",
